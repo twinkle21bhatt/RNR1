@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDemoTable extends Migration
+class CreateUsersPostTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class CreateDemoTable extends Migration
     {
         Schema::create('usersposts', function (Blueprint $table) {
             $table->increments('id');
-            $table->tinyText('titile');
+            $table->tinyText('title');
             $table->string('image');
             $table->longText('description');
             $table->string('status');
