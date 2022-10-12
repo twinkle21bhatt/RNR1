@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\userspostController;
+use App\Http\Controllers\UsersModuleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('userpost', UserspostController::class);
